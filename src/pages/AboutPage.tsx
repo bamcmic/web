@@ -10,7 +10,7 @@ function AboutPage() {
               <div className="SharedInfo">
 
                 <div className="down">
-                    <button className="card3" onClick={() => window.open("https://www.example.com", "_blank")}>
+                    <button className="card3" onClick={() => window.open("https://github.com/RainNight-PrincessHighness/General-template", "_blank")}>
                         <svg
                             className="github"
                             height="40px"
