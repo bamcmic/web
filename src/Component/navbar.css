@@ -1,0 +1,61 @@
+/* 防止移动端怪异表现 */
+
+/* 兼容旧版浏览器 */
+@supports not (backdrop-filter: blur(20px)) {
+}
+.navbar-topbox{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+    width: 50%;
+    min-width: 500px;
+    height: 70px;
+    display: flex;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: transform .25s;
+}
+.navbar-topbox:hover{
+    transform: scale(1.05);
+}
+
+.navbar{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li{ 
+    margin-left: 15px;
+    padding: 10px;
+    display:block;
+    list-style-type:none;
+    float:inline-start;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+}
+
+.BlogLogo{
+    margin: 10px 10px 0 40px;
+    overflow: visible;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    -webkit-clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    transition: transform .25s;
+}
+.BlogLogo:hover{
+    transform: scale(1.1);
+}
+
+.ant-segmented-item a{
+    color: whitesmoke;
+}
+
+.ant-segmented-item.ant-segmented-item-selected{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.ant-segmented-thumb.ant-segmented-thumb-motion{
+    background-color: rgba(0, 0, 0, 0.3);
+}
